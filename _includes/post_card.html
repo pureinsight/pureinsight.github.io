@@ -18,11 +18,8 @@
     </div><!-- card body -->
     <div class="card-footer">
       <small class="text-muted">
-        <a href="{{ author.url }}">{{ author.name }}</a>
-        in 
-        <a href="{{ category.url }}">{{ category.name }}</a>
+        {% include post_info.html post=post author=author category=category %}
       </small>
-      <small class="text-muted">| {{ post.date | date_to_string }}</small>
     </div>
   </div><!-- card -->
 </div><!-- col -->
