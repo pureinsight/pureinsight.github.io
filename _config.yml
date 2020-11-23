@@ -1,4 +1,7 @@
 title: PureInsight
+default_cover: 
+  link: /assets/images/default_cover.png
+  alt: This is a placeholder image because a cover for the post is not available
 
 defaults:
   - scope:

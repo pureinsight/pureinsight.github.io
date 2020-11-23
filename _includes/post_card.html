@@ -1,0 +1,21 @@
+{% assign post = include.post %}
+<div class="col mb-4">
+  <div class="card">
+    
+    <a href="{{ post.url }}">
+      <img src="{{ post.cover_image.link | default: site.default_cover.link }}" class="card-img-top" alt="{{ post.cover_image.alt | default: site.default_cover.alt }}">
+    </a>
+    
+    <div class="card-body">
+      
+      <h5 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h5>
+      
+      <p class="card-text">{{ post.excerpt }}</p>
+
+    </div><!-- card body -->
+    <div class="card-footer">
+      <small class="text-muted">{{ post.date | date_to_string }}</small>
+    </div>
+  </div><!-- card -->
+</div><!-- col -->
+
