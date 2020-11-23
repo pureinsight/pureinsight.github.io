@@ -3,7 +3,8 @@
     {{ include.name | capitalize }}
   </a>
   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-    <a class="dropdown-item" href="#">Jahanzeb</a>
-    <a class="dropdown-item" href="#">Joe</a>
+    {% for item in site[include.name] %}
+      <a class="dropdown-item" href="{{item.url}}">{{item.name}}</a>
+    {% endfor %}
   </div>
 </li>
