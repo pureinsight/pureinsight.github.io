@@ -1,4 +1,7 @@
 {% assign post = include.post %}
+{% assign author = site.authors | where: 'short_name', post.author | first %}
+{% assign category = site.categories | where: 'short_name', post.category | first %}
+
 <div class="col mb-4">
   <div class="card">
     
@@ -15,7 +18,9 @@
     </div><!-- card body -->
     <div class="card-footer">
       <small class="text-muted">
-        Sunny in Phones 
+        <a href="{{ author.url }}">{{ author.name }}</a>
+        in 
+        <a href="{{ category.url }}">{{ category.name }}</a>
       </small>
       <small class="text-muted">| {{ post.date | date_to_string }}</small>
     </div>
