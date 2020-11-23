@@ -16,3 +16,15 @@ article.post img {
   display: block;
   margin: 10px auto;
 }
+
+section.post-tags {
+  margin-top: 2rem;
+}
+
+section.post-tags span {
+  color: #7E7E7E;
+  background-color: #F2F2F2;
+  padding: 10px;
+  margin-right: 8px;
+  border-radius: 5px;
+}

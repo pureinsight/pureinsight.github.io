@@ -15,3 +15,9 @@ layout: default
   <img src="{{ page.cover_image.link | default: site.default_cover.link }}" alt="{{ page.cover_image.alt | default: site.default_cover.alt }}">
   {{ content | markdownify }}  
 </article>
+
+<section class="post-tags text-center">
+  {% for tag in page.tags %}
+    <span>{{ tag | capitalize }}</span>
+  {% endfor %}
+</section>
