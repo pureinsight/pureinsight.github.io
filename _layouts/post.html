@@ -1,12 +1,13 @@
 ---
 layout: default 
+comments: true
 ---
 {% assign author = site.authors | where: 'short_name', page.author | first %}
 {% assign category = site.categories | where: 'short_name', page.category | first %}
 
 <h2 class="mb-3">{{ page.title }}</h2>
 
-<p class="text-muted mb-4" style="line-height: 2.5rem;">
+<p class="text-muted mb-2" style="line-height: 2.5rem;">
   <img src="/assets/images/authors/{{author.image | default: site.default_author.image}}" alt="{{author.name}}" class="mini-author mr-1"> 
   {% include post_info.html post=page author=author category=category %}
 </p>
@@ -21,3 +22,5 @@ layout: default
     <span>{{ tag | capitalize }}</span>
   {% endfor %}
 </section>
+
+{% include comments.html %}
