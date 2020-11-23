@@ -1,6 +1,6 @@
 ---
 layout: default
 ---
-# Latest posts
+## Latest posts
 
-{% include posts.html %}
+{% include posts.html posts=site.posts %}
