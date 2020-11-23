@@ -1,4 +1,12 @@
 ---
 layout: default
 ---
-<h1>{{ page.name }}</h1>
+<section class="author">
+  <div class="text-center">
+    <img src="/assets/images/authors/{{page.image | default: site.default_author.image}}" alt="{{page.name}}" class="author-image rounded">
+  </div>
+  <h3 class="text-center mt-2" style="font-weight: 400;">{{ page.name }}</h3>
+</section>
+
+{% assign posts = site.posts | where: 'author', page.short_name %}
+{% include posts.html posts=posts %}

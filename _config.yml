@@ -5,9 +5,8 @@ default_cover:
   alt: This is a placeholder image because a cover for the post is not available
 
 default_author:
-  link: /assets/authors/default.png
-  alt: This is a placeholder image as the author's image is not available
-
+  image: default.png
+  
 collections:
   authors:
     output: true
