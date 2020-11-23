@@ -1,6 +1,6 @@
 ---
 layout: default
 ---
-<h1>Latest posts</h1>
+# Latest posts
 
 {% include posts.html %}
