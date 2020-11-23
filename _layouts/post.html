@@ -5,8 +5,13 @@ layout: default
 {% assign category = site.categories | where: 'short_name', page.category | first %}
 
 <h2 class="mb-3">{{ page.title }}</h2>
-<p class="text-muted mb-4">
+
+<p class="text-muted mb-4" style="line-height: 2.5rem;">
   <img src="/assets/images/authors/{{author.image | default: site.default_author.image}}" alt="{{author.name}}" class="mini-author mr-1"> 
   {% include post_info.html post=page author=author category=category %}
 </p>
-{{ content | markdownify }}
+
+<article class="post">
+  <img src="{{ page.cover_image.link | default: site.default_cover.link }}" alt="{{ page.cover_image.alt | default: site.default_cover.alt }}">
+  {{ content | markdownify }}  
+</article>

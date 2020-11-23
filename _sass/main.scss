@@ -9,5 +9,10 @@
 .mini-author {
   border-radius: 100%;
   width: 48px;
-  
+}
+
+article.post img {
+  max-width: 500px;
+  display: block;
+  margin: 10px auto;
 }
