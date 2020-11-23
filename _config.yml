@@ -1,7 +1,16 @@
 title: PureInsight
+
 default_cover: 
   link: /assets/images/default_cover.png
   alt: This is a placeholder image because a cover for the post is not available
+
+default_author:
+  link: /assets/authors/default.png
+  alt: This is a placeholder image as the author's image is not available
+
+collections:
+  authors:
+    output: true
 
 defaults:
   - scope:
@@ -9,6 +18,11 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
 
 plugins:
   - jekyll-feed
