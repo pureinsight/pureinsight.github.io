@@ -7,7 +7,7 @@ google_analytics: UA-183894520-1
 url: https://pureinsight.github.io
 
 default_cover: 
-  link: /assets/images/default_cover.png
+  link: default_cover.png
   alt: This is a placeholder image because a cover for the post is not available
 
 default_author:

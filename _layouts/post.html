@@ -13,7 +13,7 @@ comments: true
 </p>
 
 <article class="post">
-  <img src="{{ page.cover_image.link | default: site.default_cover.link }}" alt="{{ page.cover_image.alt | default: site.default_cover.alt }}">
+  <img src="/assets/images/posts/{{ page.cover_image.link | default: site.default_cover.link }}" alt="{{ page.cover_image.alt | default: site.default_cover.alt }}">
   {{ content | markdownify }}  
 </article>
 
