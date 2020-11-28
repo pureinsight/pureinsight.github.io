@@ -40,3 +40,14 @@ section.post-tags span {
   margin-right: 5px;
   vertical-align: center;
 }
+
+.newsletter {
+  width: 350px;
+  margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+ .newsletter {
+    width: 270px;
+  } 
+}
